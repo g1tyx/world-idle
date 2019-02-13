@@ -2,7 +2,7 @@ define([], function () {
     return [{
         id: "productionResearch",
         group: "a",
-        name: "Production research",
+        name: "生产研究",
         price: {
             money: 4e3
         },
@@ -12,13 +12,13 @@ define([], function () {
         bonus: {
             type: "special",
             id: "allowProductionResearch",
-            description: "Open production research options"
+            description: "打开生产研究选项"
         }
     }, {
         id: "farmProduction",
         group: "a",
         dependsOnSpecialBonuses: ["allowProductionResearch"],
-        name: "Farm production",
+        name: "农业生产",
         price: {
             money: 5e3,
             knowledge: 1
@@ -34,7 +34,7 @@ define([], function () {
         id: "woodCutterProduction",
         group: "a",
         dependsOnSpecialBonuses: ["allowProductionResearch"],
-        name: "Wood cutter production",
+        name: "伐木产业",
         price: {
             money: 1e4,
             knowledge: 5
@@ -51,7 +51,7 @@ define([], function () {
         group: "a",
         dependsOnSpecialBonuses: ["allowProductionResearch"],
         dependsOnBuilding: "toolMaker",
-        name: "Tool maker production",
+        name: "工具制造",
         price: {
             money: 25e3,
             knowledge: 10
@@ -68,7 +68,7 @@ define([], function () {
         group: "a",
         dependsOnSpecialBonuses: ["allowProductionResearch"],
         dependsOnBuilding: "medicineFactory",
-        name: "Medicine factory production",
+        name: "制药产业",
         price: {
             money: 75e3,
             knowledge: 25
@@ -85,7 +85,7 @@ define([], function () {
         group: "a",
         dependsOnSpecialBonuses: ["allowProductionResearch"],
         dependsOnBuilding: "carFactory",
-        name: "Car factory production",
+        name: "汽车产业",
         price: {
             money: 2e5,
             knowledge: 50
@@ -102,7 +102,7 @@ define([], function () {
         group: "a",
         dependsOnSpecialBonuses: ["allowProductionResearch"],
         dependsOnBuilding: "researchCenter",
-        name: "Research center production",
+        name: "潜心研究",
         price: {
             money: 5e5,
             knowledge: 100
@@ -119,7 +119,7 @@ define([], function () {
         group: "a",
         dependsOnSpecialBonuses: ["allowProductionResearch"],
         dependsOnBuilding: "weaponsFactory",
-        name: "Weapons factory production",
+        name: "武器制造",
         price: {
             money: 25e7,
             knowledge: 24e3
@@ -134,7 +134,7 @@ define([], function () {
     }, {
         id: "maxWorkersResearch",
         group: "b",
-        name: "Max workers research",
+        name: "工人上限研究",
         price: {
             money: 5e4
         },
@@ -144,13 +144,13 @@ define([], function () {
         bonus: {
             type: "special",
             id: "allowMaxWorkersResearch",
-            description: "Open max workers research options"
+            description: "打开最大工人研究选项"
         }
     }, {
         id: "farmMaxWorkers",
         group: "b",
         dependsOnSpecialBonuses: ["allowMaxWorkersResearch"],
-        name: "Farm max workers",
+        name: "农民上限",
         price: {
             money: 1e5,
             knowledge: 1
@@ -166,7 +166,7 @@ define([], function () {
         id: "woodCutterMaxWorkers",
         group: "b",
         dependsOnSpecialBonuses: ["allowMaxWorkersResearch"],
-        name: "Wood cutter max workers",
+        name: "伐木工上限",
         price: {
             money: 5e5,
             knowledge: 5
@@ -183,7 +183,7 @@ define([], function () {
         group: "b",
         dependsOnSpecialBonuses: ["allowMaxWorkersResearch"],
         dependsOnBuilding: "toolMaker",
-        name: "Tool maker max workers",
+        name: "工具工人上限",
         price: {
             money: 1e6,
             knowledge: 10
@@ -200,7 +200,7 @@ define([], function () {
         group: "b",
         dependsOnSpecialBonuses: ["allowMaxWorkersResearch"],
         dependsOnBuilding: "medicineFactory",
-        name: "Medicine factory max workers",
+        name: "制药工人上限",
         price: {
             money: 5e6,
             knowledge: 25
@@ -217,7 +217,7 @@ define([], function () {
         group: "b",
         dependsOnSpecialBonuses: ["allowMaxWorkersResearch"],
         dependsOnBuilding: "carFactory",
-        name: "Car factory max workers",
+        name: "造车工人上限",
         price: {
             money: 1e7,
             knowledge: 50
@@ -234,7 +234,7 @@ define([], function () {
         group: "b",
         dependsOnSpecialBonuses: ["allowMaxWorkersResearch"],
         dependsOnBuilding: "researchCenter",
-        name: "Research center max workers",
+        name: "研究员上限",
         price: {
             money: 5e7,
             knowledge: 100
@@ -251,7 +251,7 @@ define([], function () {
         group: "b",
         dependsOnSpecialBonuses: ["allowMaxWorkersResearch"],
         dependsOnBuilding: "weaponsFactory",
-        name: "Weapons factory max workers",
+        name: "武器工人上限",
         price: {
             money: 25e7,
             knowledge: 150
@@ -268,7 +268,7 @@ define([], function () {
         group: "b",
         dependsOnSpecialBonuses: ["allowMaxWorkersResearch"],
         dependsOnBuilding: "barracks",
-        name: "Barracks max soldiers",
+        name: "兵营士兵上限",
         price: {
             money: 5e8,
             knowledge: 200
@@ -278,12 +278,12 @@ define([], function () {
         bonus: {
             type: "buildingMaxWorkers",
             buildingId: "barracks",
-            multiplayer: 1.28
+            multiplayer: 1.25
         }
     }, {
         id: "priceResearch",
         group: "c",
-        name: "Price research",
+        name: "价格研究",
         price: {
             money: 1e4
         },
@@ -293,13 +293,13 @@ define([], function () {
         bonus: {
             type: "special",
             id: "allowPriceResearch",
-            description: "Open price research options"
+            description: "打开价格研究选项"
         }
     }, {
         id: "foodPrice",
         group: "c",
         dependsOnSpecialBonuses: ["allowPriceResearch"],
-        name: "Food price",
+        name: "食物价格",
         price: {
             money: 1e4,
             knowledge: 1
@@ -316,7 +316,7 @@ define([], function () {
         group: "c",
         dependsOnSpecialBonuses: ["allowPriceResearch"],
         dependsOnBuilding: "toolMaker",
-        name: "Tools price",
+        name: "工具价格",
         price: {
             money: 5e4,
             knowledge: 5
@@ -333,7 +333,7 @@ define([], function () {
         group: "c",
         dependsOnSpecialBonuses: ["allowPriceResearch"],
         dependsOnBuilding: "medicineFactory",
-        name: "Medicine price",
+        name: "药物价格",
         price: {
             money: 25e4,
             knowledge: 25
@@ -350,7 +350,7 @@ define([], function () {
         group: "c",
         dependsOnSpecialBonuses: ["allowPriceResearch"],
         dependsOnBuilding: "carFactory",
-        name: "Cars price",
+        name: "汽车价格",
         price: {
             money: 1e6,
             knowledge: 100
@@ -367,7 +367,7 @@ define([], function () {
         group: "d",
         dependsOnSpecialBonuses: [],
         dependsOnBuilding: "barracks",
-        name: "Soldiers attack",
+        name: "士兵攻击",
         price: {
             money: 1e10,
             knowledge: 1e6
@@ -383,7 +383,7 @@ define([], function () {
         group: "d",
         dependsOnSpecialBonuses: [],
         dependsOnBuilding: "barracks",
-        name: "Weapon effectiveness",
+        name: "武器效果",
         price: {
             money: 1e11,
             knowledge: 1e7
@@ -399,7 +399,7 @@ define([], function () {
         group: "d",
         dependsOnSpecialBonuses: [],
         dependsOnBuilding: "barracks",
-        name: "Soldiers gear",
+        name: "士兵装备",
         price: {
             money: 1e8,
             knowledge: 1e4
@@ -413,7 +413,7 @@ define([], function () {
     }, {
         id: "workerDistribution",
         group: "e",
-        name: "Worker management",
+        name: "工人管理",
         price: {
             money: 2e4,
             knowledge: 5
@@ -424,7 +424,7 @@ define([], function () {
         bonus: {
             type: "special",
             id: "allowWorkerDistribution",
-            description: "Gives more control over worker distribution among buildings"
+            description: "控制每个建筑物之间的工人分配"
         }
     }]
 })
