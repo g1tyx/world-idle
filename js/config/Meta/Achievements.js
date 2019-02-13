@@ -6,7 +6,7 @@ define([], function () {
             bonus: {
                 type: "special",
                 id: "supportScreen",
-                description: "See support screen"
+                description: "出现支持界面"
             },
             tests: [{
                 type: "amountOfResources",
@@ -20,7 +20,7 @@ define([], function () {
             bonus: {
                 type: "special",
                 id: "allowWars",
-                description: '<span style="color:red">Can go to war</span>'
+                description: '<span style="color:red">可以去打仗</span>'
             },
             tests: [{
                 type: "amountOfPopulation",
@@ -33,7 +33,7 @@ define([], function () {
             bonus: {
                 type: "special",
                 id: "allowGenetics",
-                description: '<span style="color:orange">Start customizing your people</span>'
+                description: '<span style="color:orange">开始定制你的人民</span>'
             },
             tests: [{
                 type: "amountOfPopulation",
