@@ -1,1 +1,56 @@
-define([],function(){return[{id:"money",name:"Money",shortName:"$",color:"rgb(125,119,0)",startingAmount:1500},{id:"food",name:"Food",shortName:"Fo ",color:"red",startingAmount:1e3,maxStorage:3},{id:"wood",name:"Wood",shortName:"Wo ",color:"brown",startingAmount:50},{id:"tools",name:"Tools",dependsOnBuilding:"toolMaker",shortName:"To ",color:"gray",startingAmount:0},{id:"medicine",name:"Medicine",dependsOnBuilding:"medicineFactory",shortName:"Me ",color:"blue",startingAmount:0},{id:"cars",name:"Cars",dependsOnBuilding:"carFactory",shortName:"Ca ",color:"purple",startingAmount:0},{id:"knowledge",name:"Knowledge",shortName:"Kn ",color:"green",startingAmount:100},{id:"weapons",name:"Weapons",dependsOnBuilding:"weaponsFactory",shortName:"we ",color:"black",startingAmount:0}]})
+define([], function () {
+    return [{
+        id: "money",
+        name: "金钱",
+        shortName: "$",
+        color: "rgb(125,119,0)",
+        startingAmount: 1500
+    }, {
+        id: "food",
+        name: "食物",
+        shortName: "食",
+        color: "red",
+        startingAmount: 1e3,
+        maxStorage: 3
+    }, {
+        id: "wood",
+        name: "木材",
+        shortName: "木",
+        color: "brown",
+        startingAmount: 50
+    }, {
+        id: "tools",
+        name: "工具",
+        dependsOnBuilding: "toolMaker",
+        shortName: "器",
+        color: "gray",
+        startingAmount: 0
+    }, {
+        id: "medicine",
+        name: "药品",
+        dependsOnBuilding: "medicineFactory",
+        shortName: "药",
+        color: "blue",
+        startingAmount: 0
+    }, {
+        id: "cars",
+        name: "车辆",
+        dependsOnBuilding: "carFactory",
+        shortName: "车",
+        color: "purple",
+        startingAmount: 0
+    }, {
+        id: "knowledge",
+        name: "知识",
+        shortName: "学",
+        color: "green",
+        startingAmount: 100
+    }, {
+        id: "weapons",
+        name: "武器",
+        dependsOnBuilding: "weaponsFactory",
+        shortName: "武",
+        color: "black",
+        startingAmount: 0
+    }]
+})
