@@ -1,0 +1,103 @@
+
+.warSection {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.armyTable {
+    width: 100%;
+    margin-top: 10px;
+    border: 1px solid rgb(229, 229, 229);
+}
+
+.armyTable td {
+    padding: 5px;
+    border: 1px solid rgb(229, 229, 229);
+}
+
+.armyTable .armySeparator {
+    font-size: 1px;
+    height: 2px;
+    background-color: lightcyan;
+}
+
+.armyTable .countryTitle {
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.armyTable .armyNo {
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+}
+
+.armyTable .value {
+    font-weight: bold;
+}
+
+.landTile {
+    float: left;
+    border: 1px solid black;
+    margin: 1px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    vertical-align: bottom;
+}
+
+.landTile .inner {
+    margin: 0 2px 0 3px;
+    height: 30px;
+    width: 45px;
+    padding-top: 15px;
+}
+
+.landTileSoldier {
+    background-image: url("../img/soldier.png");
+}
+
+.landTile .lifeBar {
+    width: 100%;
+    height: 5px;
+    background-color: red;
+}
+
+.actionButton {
+    text-decoration:none;
+    border: 1px solid lightgray;
+    display:block;
+    padding: 1px;
+    margin: 1px;
+    border-radius: 5px;
+    text-align:center;
+    color:black;
+}
+
+.actionSelected {
+    font-weight:bold;
+    background-color:lightgray;
+}
+
+
+.sand {
+    background-color: yellow;
+}
+
+.mountain {
+    background-color: gray;
+}
+
+.forest {
+    background-color: forestgreen;
+}
+
+.grassland {
+    background-color: lawngreen;
+}
+
+.sea {
+    background-color: lightblue
+;
+}

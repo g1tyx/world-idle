@@ -1,0 +1,54 @@
+<div id="genetics">
+    <br/>
+    Genes: <b id="genes"></b> Used: <b id="usedGenes"></b> Unused: <b id="unusedGenes"></b><br/>
+    <br/>
+
+    <div class="ascendArea">
+        <div id="ascendButton" class="mutateButton">Ascend and gain <b id="newGenes"></b> genes</div>
+        <br/>
+        <span>Ascend will reset the game, but you will gain genes to use for various bonuses.</span>
+    </div>
+    <br/>
+    <br/>
+    <table id="mutationTable" class="dataTable" width="100%">
+        <tr>
+            <th align="left">Mutation</th>
+            <th>Bonus</th>
+            <th>Bonus</th>
+            <th>Mutate</th>
+        </tr>
+        {{#each mutations}}
+        <tr data-id="{{id}}" class="mutationRow">
+            <td>{{name}}</td>
+            <td>{{{description}}}</td>
+            <td align="center">{{bonus}}</td>
+            <td align="center" style="width:90px;" class="workerDistribution">
+                <input type="text" name="genes" data-id="{{id}}" value="{{genes}}" style="width:80px"/>
+            </td>
+        </tr>
+        {{/each}}
+        <tr>
+            <th align="left">&nbsp;</th>
+            <th>&nbsp;</th>
+            <th>&nbsp;</th>
+            <th>
+                <div class="mutateButton">MUTATE</div>
+            </th>
+        </tr>
+    </table>
+    <br/>
+    <br/>
+    <b>What?</b><br/>
+    Each birth will give you a small amount of genes that you can use to mutate your people to better or worse. You need
+    to ascend to use provided genes.<br/>
+    <br/>
+    <b>When?</b><br/>
+    It is not recommended to ascend before you have <b>at least a few hundred new genes</b>. And just in case make a
+    copy of your game save data in case you want to get your population back. <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+</div>

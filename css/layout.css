@@ -1,0 +1,39 @@
+
+.layoutLeft {
+    width: 25%;
+    min-width: 200px;
+}
+
+.layoutRight {
+    width: 75%;
+}
+
+.layoutMenu {
+    width: 100%;
+    overflow: hidden;
+}
+
+.layoutMenu a {
+    display: block;
+    float: left;
+    font-size: 1em;
+    text-decoration: none;
+    color: black;
+    border: 1px solid lightgray;
+    border-top: 0;
+    margin: 0 5px 5px 5px;
+    padding: 5px 10px 5px 10px;
+    border-radius: 0 0 8px 8px;
+}
+
+.layoutMenu a.selected {
+    background-color: rgb(243, 243, 243);
+}
+
+.layoutMenu a:hover {
+    color: gray;
+}
+
+.layoutMenuContent {
+    clear: both;
+}

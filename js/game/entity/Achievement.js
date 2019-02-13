@@ -1,0 +1,2 @@
+define([],function(){var e=function(e){this.meta=e,this.achieved=!1}
+return e.prototype.getMeta=function(){return this.meta},e.prototype.isAchieved=function(){return this.achieved},e.prototype.setAchieved=function(e){this.achieved=e},e.prototype.isVisible=function(e){return(!this.meta.depends||e.getAchievement(this.meta.depends).isAchieved())&&(!this.meta.dependsOnBuilding||e.getBuilding(this.meta.dependsOnBuilding).getAmount()>0)},e.prototype.getSaveData=function(){return this.achieved},e.prototype.updateFromSaveData=function(e){this.achieved=!!e},e})

@@ -1,0 +1,5 @@
+define(["calculator/PriceCalculator"],function(t){var e=function(e){this.meta=e,this.amount=0,this.priceCalculators={}
+for(var i in this.meta.price)this.priceCalculators[i]=new t(this.meta.price[i],this.meta.priceIncrease)}
+return e.prototype.getMeta=function(){return this.meta},e.prototype.getAmount=function(){return this.amount},e.prototype.setAmount=function(t){this.amount=t},e.prototype.addAmount=function(t){this.amount+=t},e.prototype.canBuyMore=function(){return!this.meta.max||this.amount<this.meta.max},e.prototype.isVisible=function(t){return t.hasSpecialBonuses(this.meta.dependsOnSpecialBonuses)&&(!this.meta.dependsOnBuilding||this.meta.dependsOnBuilding&&t.getBuilding(this.meta.dependsOnBuilding).getAmount()>0)&&(!this.meta.hideIfBought||this.meta.hideIfBought&&0==this.amount)},e.prototype.getPrice=function(){var t={}
+for(var e in this.meta.price)t[e]=this.priceCalculators[e].getPrice(this.amount,1)
+return t},e.prototype.getSaveData=function(){return this.amount},e.prototype.updateFromSaveData=function(t){this.amount=Number(t),isNaN(this.amount)&&(this.amount=0)},e})

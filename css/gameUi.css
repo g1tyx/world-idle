@@ -1,0 +1,162 @@
+
+.overallInfo {
+    clear: both;
+    overflow: auto;
+    padding: 3px 5px 1px 5px;
+    background-color: rgb(243, 243, 243);
+    border: 1px solid rgb(225, 225, 232);
+    border-top: 0;
+}
+
+.overallInfo #settingsButton {
+    float: right;
+    display: block;
+    padding: 2px 5px 2px 5px;
+    border: 1px solid rgb(225, 225, 232);
+    background-color: rgb(236, 236, 240);
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    border-radius: 8px;
+}
+
+.overallInfo #settingsButton:hover {
+    background-color: rgb(222, 221, 230);
+}
+
+.overallInfo #yearInfo {
+    padding: 4px 0 4px 0;
+    width: 250px;
+    float: left;
+}
+
+.overallInfo .controlButton {
+    width: 70px;
+    padding: 2px 5px 2px 5px;
+    display: block;
+    float: left;
+    border: 1px solid rgb(225, 225, 232);
+    background-color: rgb(236, 236, 240);
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    border-radius: 8px;
+    margin-right: 5px;
+    cursor:pointer;
+}
+
+.overallInfo .controlButton:hover {
+    background-color: rgb(222, 221, 230);
+}
+
+#resources {
+    border: 1px solid rgb(225, 225, 232);
+    border-top: 0;
+    margin-right: 10px;
+    padding: 5px;
+    line-height: 1.5em;
+}
+
+#resources .resourceRowTitle {
+    width: 80px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-align: right;
+}
+
+#resources .resourceRow {
+    width: 160px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-align: left;
+}
+
+#resources .resourceChange {
+    font-size: 0.8em;
+}
+
+#populationArea {
+    border: 1px solid rgb(225, 225, 232);
+    border-top: 0;
+    margin-right: 10px;
+    padding: 5px;
+    line-height: 1.5em;
+}
+
+#populationArea .rowTitle {
+    width: 80px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-align: right;
+}
+
+#populationArea .populationInfo {
+    margin: 10px 0 0 0;
+}
+
+#buildings {
+    margin: 0 0 0 0;
+}
+
+#buildings .addWorkersButton, .removeWorkersButton {
+    display: block;
+    float: left;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+    padding: 1px 3px 1px 3px;
+    margin: 2px;
+    border: 1px solid lightgray;
+    width: 12px;
+}
+
+#buildings .workersPercentage {
+    display: block;
+    float: left;
+    width: 40px;
+    padding: 5px 0 5px 0;
+}
+
+.buyButton {
+    display: block;
+    padding: 5px 5px 5px 5px;
+
+    text-align: center;
+    text-decoration: underline;
+    color: black;
+    font-weight: bold;
+    font-size: 1em;
+    border-radius: 8px;
+}
+
+.buyDisabled {
+    color: red;
+    font-weight: normal;
+    text-decoration: none;
+}
+
+#settingsBg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.5;
+}
+
+#settings {
+    position: absolute;
+    top: 100px;
+    padding: 15px;
+    border: 1px solid rgb(225, 225, 232);
+    border-radius: 8px;
+    background-color: white;
+    margin: 0 auto 0 auto;
+}
+
+#settings .saveData {
+    margin: 10px 0 10px 0;
+    width: 400px;
+    height: 100px;
+}

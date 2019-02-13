@@ -1,0 +1,2 @@
+define(["text!template/populationUi.html","ui/PopulationOverviewUi"],function(t,i){var e=function(t){this.game=t,this.tabs={overview:new i(t)},this.container=null}
+return e.prototype.display=function(i){this.container=i,this.container.html(Handlebars.compile(t)({})),this.tabs.overview.display($("#populationContent"))},e.prototype.tick=function(t){this.tabs.overview.tick()},e.prototype.destroy=function(){this.tabs.overview.destroy(),this.container.html(""),this.container=null},e})

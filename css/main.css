@@ -1,0 +1,156 @@
+
+html {
+    overflow-y: scroll;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 0.8em;
+    height: 100%;
+    background-color: white;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+#main {
+    margin: 0 auto 0 auto;
+    min-width: 800px;
+}
+
+body, html, div, span, td {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+table, td, tr, div {
+    padding: 0;
+    margin: 0;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+h2 {
+    font-size: 1em;
+    padding: 0;
+    margin: 0;
+    display: block;
+}
+
+#topAdd {
+    width: 800px;
+    margin: 0 auto 0 auto;
+}
+
+#content {
+    max-width: 1000px;
+    min-width: 800px;
+    margin: 0 auto 0 auto;
+}
+
+.dataTable {
+    margin-top: 10px;
+    border: 1px solid rgb(229, 229, 229);
+    border-top: 0;
+}
+
+.dataTable th {
+    background-color: rgb(241, 241, 241);
+    padding: 5px;
+    border-bottom: 1px solid rgb(229, 229, 229)
+}
+
+.dataTable td {
+    padding: 5px;
+    border-right: 1px solid rgb(229, 229, 229);
+}
+
+.dataTable .twoLines {
+    min-height: 25px;
+}
+
+.dataTable tr.separator {
+    height: 5px;
+    font-size: 0;
+    background-color: rgb(255, 251, 219) !important;
+}
+
+.dataTable tr:nth-child(odd) {
+    background-color: rgb(247, 247, 247);
+}
+
+.buyPackage {
+    border: 1px solid lightgray;
+    background-color: rgb(255, 217, 83);
+    border-radius: 8px;
+    padding: 10px;
+    display: block;
+    width: 500px;
+    margin: 0 auto 0 auto;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+
+#introBg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.5;
+}
+
+#intro {
+    position: absolute;
+    top: 100px;
+    width: 400px;
+    margin: 0 auto 0 auto;
+    padding: 15px;
+    border: 3px solid rgb(225, 225, 232);
+    border-radius: 8px;
+    background-color: white;
+}
+
+#intro #startGameButton {
+    border: 1px solid lightgray;
+    background-color: rgb(255, 217, 83);
+    border-radius: 8px;
+    padding: 10px;
+    display: block;
+    width: 200px;
+    margin: 0 auto 0 auto;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+
+.tooltip {
+    max-width: 150px;
+    position: absolute;
+    text-align: center;
+    margin: 0 auto 0 auto;
+    padding: 2px;
+    border: 1px solid black;
+    border-radius: 2px;
+    background-color: white;
+    font-size: 0.9em;
+}
+
+.achievementPopup {
+    width: 400px;
+    position: absolute;
+    top: 50px;
+    text-align: center;
+    margin: 0 auto 0 auto;
+    padding: 10px 15px 10px 15px;
+    border: 3px solid rgb(227, 216, 0);
+    border-radius: 8px;
+    background-color: yellow;
+}
