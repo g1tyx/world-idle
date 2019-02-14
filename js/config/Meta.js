@@ -81,8 +81,8 @@ define(["config/Meta/Buildings", "config/Meta/Researches", "config/Meta/Achievem
             },
             countries: [{
                 id: "west",
-                name: "West",
-                description: "Lots of food, knowledge and wealth. The further you go the tougher enemies will get.",
+                name: "西边",
+                description: "大量的食物,知识和财富.你越深入就会遇到越强的敌人.",
                 soldiers: 3500,
                 soldiersIncrease: 1.21,
                 recoveryRate: .01,
@@ -99,8 +99,8 @@ define(["config/Meta/Buildings", "config/Meta/Researches", "config/Meta/Achievem
                 }
             }, {
                 id: "east",
-                name: "East",
-                description: "Lots of wood and wealth. Countries are rather small, but they have good defense.",
+                name: "东边",
+                description: "大量的木材和财富.国家虽小,但是防御力可不弱.",
                 soldiers: 15e3,
                 soldiersIncrease: 1.12,
                 recoveryRate: .01,
@@ -116,8 +116,8 @@ define(["config/Meta/Buildings", "config/Meta/Researches", "config/Meta/Achievem
                 }
             }, {
                 id: "north",
-                name: "North",
-                description: "Lots of good weapons and wealth. Countries are big and with good defense",
+                name: "北边",
+                description: "大量的武器和财富.国家很大且防御牢固.",
                 soldiers: 25e3,
                 soldiersIncrease: 1.09,
                 recoveryRate: .01,
