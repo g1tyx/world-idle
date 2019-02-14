@@ -1,30 +1,30 @@
 <div id="wars">
     <br/>
-    <span class="warSection">Armies</span><br/>
+    <span class="warSection">军队</span><br/>
     <table class="armyTable">
         {{#each armies}}
         <tr>
             <td width="50" rowspan="3" valign="top" class="armyNo" style="height:100px">1</td>
-            <td width="70" align="right">Soldiers:</td>
+            <td width="70" align="right">士兵:</td>
             <td width="130" class="value">{{soldiers}}</td>
-            <td width="70" align="right">Status:</td>
-            <td><b style="color:{{stateColor}}">{{state}}</b> {{actionYears}} more years</td>
+            <td width="70" align="right">状态:</td>
+            <td><b style="color:{{stateColor}}">{{state}}</b> {{actionYears}} 年</td>
             <td rowspan="3" data-id="{{id}}" width="120" valign="middle" style="text-align:center;">
                 {{#if canChangeArmyParams}}
                 <a href="javascript:void(0);" data-countryId=""
-                   class="actionButton {{#if noAttackCountryId}}actionSelected{{/if}}">Hold</a>
+                   class="actionButton {{#if noAttackCountryId}}actionSelected{{/if}}">待命</a>
                 {{#each countries}}
                 <a href="javascript:void(0);" data-countryId="{{id}}"
-                   class="actionButton  {{#if selected}}actionSelected{{/if}}">Go {{name}}</a>
+                   class="actionButton  {{#if selected}}actionSelected{{/if}}">前往 {{name}}</a>
                 {{/each}}
                 {{else}}
-                <b style="color:red">FIGHTING</b>
+                <b style="color:red">战斗</b>
                 {{/if}}
         </tr>
         <tr>
-            <td align="right">Weapons:</td>
+            <td align="right">武器:</td>
             <td class="value">{{weapons}}</td>
-            <td align="right">Attack:</td>
+            <td align="right">攻击:</td>
             <td class="value">{{attack}}</td>
         </tr>
         <tr>
@@ -33,15 +33,15 @@
         {{/each}}
     </table>
     <br/><br/>
-    <span class="warSection">Countries</span>
+    <span class="warSection">国家</span>
     <table class="armyTable">
         {{#each countries}}
         <tr>
             <td rowspan="2" width="150" valign="top"><span class="countryTitle">{{name}}</span><br/><span
                     style="font-size:0.8em">{{description}}</span></td>
-            <td width="60" align="right">Soldiers:</td>
+            <td width="60" align="right">士兵:</td>
             <td width="130" class="value">{{soldiers}}</td>
-            <td width="60" align="right">Attack:</td>
+            <td width="60" align="right">攻击:</td>
             <td class="value">{{attack}}</td>
         </tr>
         <tr>
@@ -67,11 +67,11 @@
     </table>
     <br/><br/>
     {{#if production}}
-    <span class="warSection">Conquered countries total production</span>
+    <span class="warSection">被征服国家的总产量</span>
     <table class="dataTable">
         <tr>
-            <th width="100">Resource</th>
-            <th width="250">Production</th>
+            <th width="100">资源</th>
+            <th width="250">生产</th>
         </tr>
         {{#each production}}
         <tr>
@@ -82,7 +82,8 @@
     </table>
     {{/if}}
     <br/><br/>
-    <b>How to get soldiers?</b><br/>
+    <b>
+    </b><br/>
     Each worker in barracks is considered to be in the army. Army gets new soldiers only when resting. <br/>
     If resting ends, soldiers in the army go fighting. Soldiers that are in war can't be called back. <br/>
     <br/>

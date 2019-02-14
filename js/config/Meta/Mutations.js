@@ -1,57 +1,57 @@
 define([], function () {
     return [{
         id: "birthRates",
-        name: "Babies",
-        description: "Increases birth rate.<br />Be careful, this may make your population unstable!",
+        name: "婴儿",
+        description: "提高出生率.<br />小心,这可能使你的人口不稳定!",
         multiplayer: 1e-4,
         slow: 1.5
     }, {
         id: "deathRates",
-        name: "Stupid",
-        description: "Increases death rate by.<br />Be careful, this may make your population unstable!",
+        name: "傻瓜",
+        description: "提高死亡率.<br />小心,这可能使你的人口不稳定!",
         multiplayer: 1e-4,
         slow: 1.5
     }, {
         id: "maxStorage",
-        name: "Better food",
-        description: "Increases food max storage.<br />Be careful, this may make your population unstable!",
+        name: "更好的食物",
+        description: "提高食物最大库存.<br />小心,这可能使你的人口不稳定!",
         multiplayer: .01,
         slow: 1.5
     }, {
         id: "buyMoreMedicine",
-        name: "Sicker",
-        description: "People buy more medicine",
+        name: "病态",
+        description: "人们购买更多药物",
         multiplayer: 5e-4,
         slow: 1.3
     }, {
         id: "buyMoreToolsAndCars",
-        name: "Consumer",
-        description: "Buy more tools and cars",
+        name: "消费者",
+        description: "购买更多汽车和工具",
         multiplayer: 5e-4,
         slow: 1.3
     }, {
         id: "buildingPrices",
-        name: "Effective",
-        description: "Reduces building prices",
+        name: "实在",
+        description: "降低建筑物价格",
         multiplayer: .002,
         slow: 1.2,
         type: "fixed"
     }, {
         id: "woodProduction",
-        name: "Stronger",
-        description: "Increase wood production",
+        name: "更强壮",
+        description: "提高木材产量",
         multiplayer: .001,
         slow: 1.2
     }, {
         id: "attack",
-        name: "Aggressive",
-        description: "Increase soldiers and weapons attack",
+        name: "侵略",
+        description: "提高士兵和武器的攻击",
         multiplayer: .001,
         slow: 1.4
     }, {
         id: "knowledgeProduction",
-        name: "Smarter",
-        description: "Increase research production",
+        name: "更聪明",
+        description: "提高研究速度",
         multiplayer: .001,
         slow: 1.005
     }]
