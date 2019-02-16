@@ -1,6 +1,6 @@
 define([], function () {
     var t = function (t) {
-        this.meta = t, this.lostSoldiers = new BigNumber(0), this.soldiers = new BigNumber(0), this.weapons = new BigNumber(0), this.attackCountryId = null, this.state = "正在休养", this.actionYears = t.restingYears
+        this.meta = t, this.lostSoldiers = new BigNumber(0), this.soldiers = new BigNumber(0), this.weapons = new BigNumber(0), this.attackCountryId = null, this.state = "resting", this.actionYears = t.restingYears
     }
     return t.prototype.getAttack = function (t) {
         return this.soldiers.multiply(this.meta.soldierStrength).multiply(t.getBonuses().war.soldiersStrength).add(this.weapons.multiply(this.getWeaponsEffectiveness()).multiply(this.meta.weaponStrength).multiply(t.getBonuses().war.weaponStrength)).multiply(t.getMutation("attack").getBonus())
