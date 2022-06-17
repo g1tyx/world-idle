@@ -1,0 +1,10 @@
+define(["config/Meta","base/SaveHandler","game/Game","calculator/Calculator","ui/GameUi","lib/LZString","ui/IntroUi"],function(t,e,a,o,i,n,r){var s=function(){}
+return s.prototype.init=function(n){var s=this
+if(this.game=new a(t.worlds[0]),this.game.updateFromSaveData(this.game.getSaveData()),this.saveHandler=new e(this.game),this.saveHandler.loadFromSaveData(this.saveHandler.getDataFromStorage(),n?!0:!1),this.calculator=new o(this.game),this.calculator.tick(),this.ui=new i(this),this.ui.display($("#content")),this.loadKongregateBonuses(),this.game.getTimer().getYear()<100){var g=new r(function(){s.ui.changeTickMode("normal")})
+g.display(),this.ui.changeTickMode("stop")}this.popInterval=setInterval(function(){if(this.kongregate){var t=this.game.getPopulationGroup().getTotalPopulation()
+console.log("Submit "+t),this.kongregate.stats.submit("max_population_sqrt2",Math.round(Math.sqrt(Math.sqrt(t))))}}.bind(this),12e4)},s.prototype.reset=function(){clearInterval(this.popInterval),this.popInterval=null,this.game=null,this.calculator=null,this.saveHandler.stop(),this.ui.destroy(),this.init(!1)},s.prototype.getGame=function(){return this.game},s.prototype.getCalculator=function(){return this.calculator},s.prototype.getSaveHandler=function(){return this.saveHandler},s.prototype.getUi=function(){return this.ui},s.prototype.setKongregate=function(t){this.kongregate=t,logger.info("Main","Kongregate API added to Main"),this.loadKongregateBonuses()},s.prototype.getKongregate=function(){return this.kongregate},s.prototype.loadKongregateBonuses=function(){if(!this.kongregate)return void logger.warning("Main","Kongregate API not loaded")
+logger.info("Main","Kongregate load items")
+var t=this
+this.kongregate.mtx.requestUserItemList(this.kongregate.services.getUsername(),function(e){if(logger.info("Main","Kongregate items loaded",e),e&&e.success){var a=[]
+for(var o in e.data){var i=e.data[o]
+a.push({id:i.id,type:i.identifier})}a.push({id:"bonus_for_update_1",type:"bonus_for_update_1"}),logger.info("Main","Load bonuses",a),t.game.useBonuses(a)}})},s})

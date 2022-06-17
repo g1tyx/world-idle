@@ -1,0 +1,17 @@
+<div id="resources">
+    <table>
+        {{#each resources}}
+        <tr>
+            <td>
+                <div class="resourceRowTitle">{{name}}:</div>
+            </td>
+            <td>
+                <div class="resourceRow">
+                    <b class="resourceValue" style="color:{{color}}">{{amount}}</b>
+                    <span class="resourceChange" style="color:{{changeColor}}">{{change}}</span>
+                </div>
+            </td>
+        </tr>
+        {{/each}}
+    </table>
+</div>

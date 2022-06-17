@@ -1,0 +1,23 @@
+{{#if change}}
+<tr class="separator">
+    <td colspan="5"></td>
+</tr>
+<tr class="separator">
+    <td colspan="5"></td>
+</tr>
+{{/if}}
+<tr data-id="{{id}}" class="researchRow twoLines" {{#if visible}}style="display:none"{{/if}}>
+    <td>{{name}}</td>
+    <td align="center">
+        <span data-name="price" style="font-size:1em; font-weight:bold">{{bought}}</span>
+    </td>
+    <td>
+        <span data-name="bonus">{{bonus}}</span>
+    </td>
+    <td>
+        <span data-name="price">{{{price}}}</span>
+    </td>
+    <td align="center">
+        <a href="javascript:void(0);" class="buyButton" data-id="{{id}}">购买</a>
+    </td>
+</tr>

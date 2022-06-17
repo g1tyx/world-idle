@@ -1,0 +1,116 @@
+<div id="wars">
+    <br/>
+    <span class="warSection">军队</span><br/>
+    <table class="armyTable">
+        {{#each armies}}
+        <tr>
+            <td width="50" rowspan="3" valign="top" class="armyNo" style="height:100px">1</td>
+            <td width="70" align="right">士兵:</td>
+            <td width="130" class="value">{{soldiers}}</td>
+            <td width="70" align="right">状态:</td>
+            <td><b style="color:{{stateColor}}">{{state}}</b> {{actionYears}} 年</td>
+            <td rowspan="3" data-id="{{id}}" width="120" valign="middle" style="text-align:center;">
+                {{#if canChangeArmyParams}}
+                <a href="javascript:void(0);" data-countryId=""
+                   class="actionButton {{#if noAttackCountryId}}actionSelected{{/if}}">待命</a>
+                {{#each countries}}
+                <a href="javascript:void(0);" data-countryId="{{id}}"
+                   class="actionButton  {{#if selected}}actionSelected{{/if}}">前往 {{name}}</a>
+                {{/each}}
+                {{else}}
+                <b style="color:red">战斗</b>
+                {{/if}}
+        </tr>
+        <tr>
+            <td align="right">武器:</td>
+            <td class="value">{{weapons}}</td>
+            <td align="right">攻击:</td>
+            <td class="value">{{attack}}</td>
+        </tr>
+        <tr>
+            <td colspan="4">&nbsp;</td>
+        </tr>
+        {{/each}}
+    </table>
+    <br/><br/>
+    <span class="warSection">国家</span>
+    <table class="armyTable">
+        {{#each countries}}
+        <tr>
+            <td rowspan="2" width="150" valign="top"><span class="countryTitle">{{name}}</span><br/><span
+                    style="font-size:0.8em">{{description}}</span></td>
+            <td width="60" align="right">士兵:</td>
+            <td width="130" class="value">{{soldiers}}</td>
+            <td width="60" align="right">攻击:</td>
+            <td class="value">{{attack}}</td>
+        </tr>
+        <tr>
+            <td align="right">{{productionResource}}:</td>
+            <td class="value">{{production}}</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="5">
+                {{#each tiles}}
+                <div class="landTile {{type}}">
+                    <div class="inner">{{health}}%</div>
+                    <div class="lifeBar" style="width:{{health}}%"></div>
+                </div>
+                {{/each}}
+            </td>
+        </tr>
+        <tr class="armySeparator">
+            <td colspan="5">&nbsp;</td>
+        </tr>
+        {{/each}}
+    </table>
+    <br/><br/>
+    {{#if production}}
+    <span class="warSection">被征服国家的总产量</span>
+    <table class="dataTable">
+        <tr>
+            <th width="100">资源</th>
+            <th width="250">生产</th>
+        </tr>
+        {{#each production}}
+        <tr>
+            <td style="color:{{color}}">{{name}}</td>
+            <td>{{value}}</td>
+        </tr>
+        {{/each}}
+    </table>
+    {{/if}}
+    <br/><br/>
+    <b>
+    </b><br/>
+    
+    工人进入兵营就会被训练成士兵.军队只有在休养时才能招收新的士兵.  <br/>
+    
+    休养结束后,士兵们会前去战斗.战争中的士兵无法被召返.  <br/>
+    <br/>
+    <b>军队的战力怎么计算?</b><br/>
+    士兵的战力加上武器的战力.拥有武器的军队战力远超没有武器的.<br/>
+    <br/>
+    <b>战斗怎么进行?</b><br/>
+    军队有两种状态:<br/>
+   
+    1) 休养 - 这种状态下军队按兵不动,休养生息.<br/>
+    
+    2) 战斗 - 这种状态下军队会在别的国家中争战,直到一定的时间后或者士兵全部被击杀.<br/>
+    <br/>
+    <b>战斗能给我带来什么?</b><br/>
+    想要征服一个国家,你必须攻陷国家中的每一个城市.每一个城市都比前一个更难征服.<br/>
+    征服国家 <b>每年</b>为你提供额外的资源,所以每个国家都很有价值!<br/>
+    <br/>
+    <b>怎么壮大军队?</b><br/>
+    你可能需要重新分配你的工人 - 比如关闭不重要的建筑,专心战斗(研究,武器工厂,等等).这样你就有更多的人口可以参军.<br/>
+    但是和强大的敌人战斗时你要小心,因为大量的士兵死亡会立刻影响出生率.失去大量的军队会对你的人口造成巨大的影响，虽然这种影响可能要许多年后才会体现出来.<br/>
+    <b>战斗后武器怎么处理?</b><br/>
+    如果你输了,所有的武器都会丢失.如果你赢了,你可以拿回一半的武器,另一半的武器都毁坏了.
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+</div>

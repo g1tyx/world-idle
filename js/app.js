@@ -1,0 +1,6 @@
+function showTooltip(e,t){console.log(e),$("#tooltip").html(t).show().css("top",e.pageY+5+"px").css("left",e.pageX-10+"px")}function hideTooltip(){$("#tooltip").hide()}requirejs.config({baseUrl:"js",urlArgs:"bust="+(new Date).getTime(),packages:[],paths:{template:"../template",BigNumber:"lib/BigNumber",BigNumberSlow:"lib/BigNumberSlow",BigNumberFast:"lib/BigNumberFast",handlebars:"lib/handlebars",text:"lib/text",logger:"base/logger",numberFormat:"base/numberFormat",Main:"Main",config:"config",game:"game",action:"game/action",entity:"game/entity",population:"game/population",calculator:"game/calculator",ui:"ui"}}),String.prototype.lcFirst=function(){return this.charAt(0).toLowerCase()+this.slice(1)},require(["BigNumber","BigNumberSlow","BigNumberFast","handlebars","text"],function(){require(["Main","logger","numberFormat"],function(e){var t=new e
+t.init(!0)
+var i=!1
+kongregateAPI.loadAPI(function(){console.log("Kongregate API loaded")
+var e=kongregateAPI.getAPI()
+t.setKongregate(e),e.stats.submit("initialized",1),e.stats.submit("NoOfTimesPlayed",1),i=!0}),setTimeout(function(){i||($("#topAdd").html('<ins class="adsbygoogle" style="display:inline-block;width:728px;height:90px" data-ad-client="ca-pub-2388056053538220" data-ad-slot="3465917096"></ins>'),(adsbygoogle=window.adsbygoogle||[]).push({}))},4e3)})})

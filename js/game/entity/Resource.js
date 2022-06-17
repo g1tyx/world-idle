@@ -1,0 +1,2 @@
+define([],function(){var t=function(t){this.meta=t,this.amount=new BigNumber(t.startingAmount?t.startingAmount:0)}
+return t.prototype.getMeta=function(){return this.meta},t.prototype.getAmount=function(){return this.amount},t.prototype.setAmount=function(t){this.amount=new BigNumber(t)},t.prototype.addAmount=function(t){this.amount=this.amount.add(t)},t.prototype.subtractAmount=function(t){this.amount=this.amount.subtract(t)},t.prototype.getSaveData=function(){return this.amount.toString()},t.prototype.updateFromSaveData=function(t){this.amount=new BigNumber(t)},t})

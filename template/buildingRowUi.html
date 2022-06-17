@@ -1,0 +1,20 @@
+<tr data-id="{{id}}" class="buildingRow" {{#if visible}}style="display:none"{{/if}}>
+    <td onmouseover="showTooltip(event, '{{description}}')" onmouseout="hideTooltip()">{{name}}</td>
+    <td align="center" data-name="amount" style="font-size:1em; font-weight:bold">0</td>
+    <td align="center">
+        <span data-name="workers">0</span>
+        (<span data-name="usedWorkers">0</span>%)<br/>
+        <span style="font-size:0.8em">最大 <span data-name="maxWorkers">0 </span></span>
+    </td>
+    <td align="center" style="width:90px;" class="workerDistribution">
+        <a href="javascript:void(0);" class="addWorkersButton" data-id="{{id}}">+</a>
+        <span class="workersPercentage"><span data-name="workersPercentage">0</span>%</span>
+        <a href="javascript:void(0);" class="removeWorkersButton" data-id="{{id}}">-</a>
+    </td>
+    <td align="center">
+        <span data-name="price"></span>
+    </td>
+    <td align="center">
+        <a href="javascript:void(0);" class="buyButton" data-id="{{id}}">购买</a>
+    </td>
+</tr>

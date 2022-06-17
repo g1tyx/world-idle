@@ -1,0 +1,54 @@
+<div id="genetics">
+    <br/>
+    基因: <b id="genes"></b> 已使用: <b id="usedGenes"></b> 未使用: <b id="unusedGenes"></b><br/>
+    <br/>
+
+    <div class="ascendArea">
+        <div id="ascendButton" class="mutateButton">升天将获得  <b id="newGenes"></b> 基因</div>
+        <br/>
+        <span>升天将会重置游戏,但你会获得基因用来购买各种加成.</span>
+    </div>
+    <br/>
+    <br/>
+    <table id="mutationTable" class="dataTable" width="100%">
+        <tr>
+            <th align="left">基因突变</th>
+            <th>奖励</th>
+            <th>加成</th>
+            <th>突变</th>
+        </tr>
+        {{#each mutations}}
+        <tr data-id="{{id}}" class="mutationRow">
+            <td>{{name}}</td>
+            <td>{{{description}}}</td>
+            <td align="center">{{bonus}}</td>
+            <td align="center" style="width:90px;" class="workerDistribution">
+                <input type="text" name="genes" data-id="{{id}}" value="{{genes}}" style="width:80px"/>
+            </td>
+        </tr>
+        {{/each}}
+        <tr>
+            <th align="left">&nbsp;</th>
+            <th>&nbsp;</th>
+            <th>&nbsp;</th>
+            <th>
+                <div class="mutateButton">突变</div>
+            </th>
+        </tr>
+    </table>
+    <br/>
+    <br/>
+    <b>做什么?</b><br/>
+    
+    每个出生的人都会有轻微的基因变异,你可以使用突变让你的人民变得更好或更差.你需要升天来使用基因.<br/>
+    <br/>
+    <b>什么时候?</b><br/>
+    
+    不推荐你在拥有 <b>至少几百新基因</b>之前进行升天.同时建议你在升天前保存一下存档,防止你后悔. <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+</div>
